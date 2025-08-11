@@ -1,0 +1,77 @@
+
+
+.form-section {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'poppins';
+  color: #14213D;
+  height: 540px;
+}
+
+.form-section .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-section label {
+  display: block;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section select,
+.form-section textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+  border-color: #FF6D1F; 
+  outline: none;
+}
+
+.form-section textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-section button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #FF6D1F;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button[type="submit"]:hover {
+  background-color: #e25c12;
+}
+
+
+@media screen and (max-width: 768px) {
+  .resource{
+    display: none;
+  }
+}

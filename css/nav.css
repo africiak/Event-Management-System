@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body{
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#FF6D1F;
+}
+
+.custom_nav {
+    position: relative;
+    gap: 15px;
+    background-color: #14213D;
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-links{
+    width: 120px;
+}
+
+.nav-item {
+    font-family: 'poppins';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.nav-item i {
+    color: #fff;
+    font-size: 10px;
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 10px;
+
+}
+
+.nav-item:hover {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+.nav-item:hover i {
+    transform: translate(-3px)!important;
+
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    transform: translate(-3px)!important;
+}
+
+.exit{
+    margin-top: 80px;
+}
+
+#logout{
+    display: inline-block;
+    padding:10px;
+    font-family: "poppins";
+    text-decoration: none;
+    text-align: center;
+    background-color:#FF6D1F;
+    color:#ffffff;
+    font-weight:300;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    width: 90px;
+}
+
+#logout:hover{
+    background-color: rgba(236, 238, 241, 0.075);
+    color:#FF6D1F;
+    border: 1px solid #FF6D1F;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item {
+        width: 50px; /* Smaller clickable area */
+        height: 50px;
+    }
+
+    .nav-item p {
+        display: none; /* Hide text */
+    }
+
+    .nav-item:hover {
+        width: 50px; /* Prevent hover from expanding */
+    }
+}
+
+
+.table {
+    text-align: left;
+    padding: 0; 
+}

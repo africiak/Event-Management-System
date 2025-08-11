@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #ffffff;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    margin-left: 100px;
+    width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'poppins';
+    color: #14213D;
+}
+
+.buttons{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.title{
+    font-family: 'poppins';
+}
+
+#edit{
+    padding:10px;
+    font-family: "poppins";
+    text-decoration: none;
+    text-align: center;
+    background-color: #FF6D1F;
+    color:#ffffff;
+    font-weight:500;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#edit:hover{
+    background-color: #e5e5e5;
+    color:#FF6D1F;
+    border: 1px solid  #FF6D1F;
+}
+
+
+.title{
+    padding: 10px;;
+}
+
+.title a{
+    text-decoration: none;
+    color: #FF6D1F;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.name{
+    display: flex;
+}
+
+
+#signup{
+    width: 100%;
+}
+
+#signupForm input,
+#signupForm button {
+    display: block; 
+    margin-bottom: 15px;
+    font-family: 'poppins';
+    color: #14213D;
+}
+
+#signupForm input{
+    background-color: rgba(132, 143, 168, 0.075);
+    border: none ;
+    border-radius: 5px;
+    color: #14213D;
+
+    
+}
+
+#signupForm input:hover{
+    border: 1px solid #FF6D1F;
+    
+}
+
+#signupForm input:focus{
+    border: 1px solid #FF6D1F;
+    outline:none;
+    background-color: rgba(132, 143, 168, 0.075); ;
+}
+
+
+#signupForm {
+    width: 90%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profiledata {
+        width: 100%;
+    }
+ 
+    .img img{
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body{
+    background-color:#fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff ;
+    transform: translate(-3px)!important;;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#FF6D1F;
+}
+
+.nav {
+    position: relative;
+    gap: 15px;
+    background-color: #14213D;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    height: 100vh;
+}
+
+.nav-links{
+    width: 120px;
+    margin-top: 30px;
+}
+
+.nav-item {
+    font-family: 'poppins';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nav-item i {
+    color: #fff;
+    font-size: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.nav-item:hover {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+.nav-item:hover i {
+    transform: translate(-3px)!important;
+
+}
+
+.nav-links a:hover{
+    transform: translate(-3px)!important;
+}
+
+.exit{
+    margin-top: 120px;
+}
+
+#logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#FF6D1F;
+    color:#ffffff;
+    font-family: 'poppins';
+    font-weight:300;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height:40px;
+
+}
+
+#logout p{
+    padding-left: 10px;
+}
+
+#logout:hover{
+    background-color: rgba(236, 238, 241, 0.075);
+    color:#FF6D1F;
+    border: 1px solid #FF6D1F;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        width: 100px;
+    }
+    .nav-item p {
+        display: none; 
+    }
+    .nav-item:hover {
+        background-color: transparent;
+    }
+    .nav-item i{
+        font-size: 13px;
+    }
+    .nav-item {
+        width: 100px;
+        height: 45px;
+    }
+
+    .exit{
+        padding-bottom: 50px;
+    }
+ 
+    #logout p {
+        display: none; 
+    }
+
+    #logout i {
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .eventform{
+        margin-left:100px ;
+    }
+
+}
+
+.container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #FF6D1F;
+}
+
+.eventform {
+    border-radius: 16px;
+    width: 1000px;
+    height: 700px; 
+    display: flex;
+    flex-direction: column; 
+box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05), 
+            0  4px 8px rgba(0, 0, 0, 0.15);
+    margin-left: 150px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.eventform .intro {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 50px; 
+    border-radius: 12px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    width: 100%;
+}
+
+#form{
+    font-family: 'poppins';
+
+}
+
+#form label{
+    color: #14213D;
+    margin-left: 20px;
+}
+
+
+#form input,
+#form textarea,
+#form select
+{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'poppins';
+  color: #14213D;
+  width: 80%;
+  margin-left: 20px;
+  background-color:#f2f2f2;
+    
+}
+
+
+#form input:hover,
+#form textarea:hover,
+#form select:hover{
+    border: 1px solid #FF6D1F;
+    
+}
+
+#form input:focus,
+#form textarea:focus,
+#form select:focus {
+    border: 1px solid #FF6D1F;
+    outline:none;
+    background-color: rgba(132, 143, 168, 0.075); ;
+}
+
+#event{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF6D1F;
+    color: #fff;
+    font-family: 'poppins';
+}
+
+#event:hover{
+    border:1px solid #FF6D1F;
+    background-color: #f3f3f3;
+    color: #FF6D1F;
+}

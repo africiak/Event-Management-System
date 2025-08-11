@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+body{
+    background-color: #14213D;
+    padding: 0;
+    margin: 0;
+}
+.signup{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.signup_form{
+    background-color: #14213D;
+    width: 900px;
+    font-family: "poppins";
+    padding-top: 50px;
+
+}
+.signup_slide{
+    background-color: #f3f3f3;
+    width: 400px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.fade-in-out.visible {
+    opacity: 1;
+}
+
+.name{
+    display: flex;
+}
+
+#roleSelection{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.radio-label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+
+}
+
+.radio-label input[type="radio"]{
+    margin: 0;
+    accent-color: #FF6D1F;
+}
+
+.radio-label:hover{
+    color:#FF6D1F;
+}
+
+
+#signup{
+    width: 100%;
+}
+
+#signupForm input,
+#signupForm button {
+    display: block; 
+    margin-bottom: 15px;
+}
+
+#signupForm input{
+    background-color: rgba(236, 238, 241, 0.075);
+    border: none ;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+
+#signupForm input:hover{
+    border: 1px solid #FF6D1F;
+    
+}
+
+#signupForm input:focus{
+    border: 1px solid #FF6D1F;
+    outline:none;
+    background-color: rgba(132, 143, 168, 0.075); ;
+}
+
+
+#signupForm {
+    width: 90%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+#signup{
+    padding:10px;
+    font-family: "poppins";
+    background-color: #FF6D1F;
+    color:#ffffff;
+    font-weight:500;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+}
+
+#signup:hover{
+    background-color: #e5e5e5;
+    color: #FF6D1F;
+    border: 1px solid #FF6D1F;
+}
+
+#google{
+    padding:10px;
+    width: 100%;
+    font-family: "poppins";
+    background-color: rgba(132, 143, 168, 0.075);
+    color:#ffffff;
+    font-weight:200;
+    border: none;
+    border-radius: 10px;
+}
+
+#google:hover{
+    border:1px solid #FF6D1F;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: rgba(132, 143, 168, 0.527); 
+    width: 30%; 
+    margin: 20px ; 
+    border-radius: 5px; 
+}
+
+.register{
+    display: flex;
+}
+
+h5{
+    font-size: 10px;
+    color: rgba(132, 143, 168, 0.527); 
+
+}
+
+label{
+    color:#777575;
+}
+
+.logo{
+    font-family: "sacramento";
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#FF6D1F;
+}
+
+.title{
+    padding: 10px;;
+}
+
+.title a{
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+p{
+    font-family: "poppins";
+    text-align: center;
+    font-weight: 600;
+    color: #14213D;
+}
+
+p a{
+    color:#FF6D1F;
+    text-decoration: none;
+    padding-left: 5px;
+
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.login_form{
+    background-color: #14213D;
+    width: 900px;
+    font-family: "poppins";
+
+}
+.login_slide{
+    background-color: #f3f3f3;
+    width: 400px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+}

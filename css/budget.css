@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.container{
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.form{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+form{
+    display: flex;
+    font-family: 'poppins';
+    flex-direction: column;
+
+}
+
+form input, select, textarea{
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    transition: border 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border: 1px solid #FF6D1F;; 
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+    border: 1px solid #FF6D1F !important;
+}
+
+button{
+    background-color: #FF6D1F;
+    border: none;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    color: #fff;
+}
+
+button:hover{
+    background-color: #eee;
+    color: #FF6D1F;
+    border: 1px solid #FF6D1F;
+}
+
+.list{
+    margin-left: 50px;
+    margin-top: 50px;
+    width:900px;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

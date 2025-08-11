@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Hiveflow</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="landing.html">HiveFlow
+                    <img src="img/logowhite.png" alt="bee icon" height="20px" weight="20px">
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-list" id="navMenu">
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#Features" aria-label="Features">
+                        Features
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" aria-label="About us">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contacts" aria-label="Contacts">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+            <a href="php/auth.php"><button class="signup">Sign up</button></a>
+        </nav>
+    </header>
+    <section class="video-section" id="home">
+        <video class="my-video" autoplay muted loop playsinline src="img/landingvideo.mp4" type="video/mp4">
+            browser doesnt support video tag.
+        </video>
+        <div class="intro-text">
+            <p>Explore. Plan. Experience.</p>
+        </div>
+    </section>
+    <div class="intro" id="about">
+        <div class="intro-container">
+            <h1>
+                Effortless Event Planning
+            </h1>
+            <br>
+            <p>
+                "HiveFlow is your all-in-one event management solution designed to simplify <br> the planning process
+                from
+                start to finish.
+                Stay organized, collaborate in real-time, <br>and bring your events to life with ease—making every
+                occasion
+                a success!"
+            </p>
+            <br><br>
+            <a href="php/auth.php"><button class="sign">Start Planning</button></a>
+        </div>
+        <div class="image">
+            <img src="img/app.svg" alt="planning illustration" width="400" height="250">
+        </div>
+    </div>
+    <section class="features-section" id="Features">
+        <h2 class="features-heading">Features</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="img/calendar.svg" alt="Easy Scheduling" class="feature-icon">
+                <h3>Easy Scheduling</h3>
+                <p>Plan and organize events in just a few clicks with our intuitive interface.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/team.svg" alt="Team Collaboration" class="feature-icon">
+                <h3>Team Collaboration</h3>
+                <p>Assign tasks and communicate in real-time with your entire committee.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/analytics.svg" alt="Real-Time Insights" class="feature-icon">
+                <h3>Real-Time Insights</h3>
+                <p>Track progress, monitor resources, and generate reports instantly.</p>
+            </div>
+        </div>
+    </section>
+    <div class="intro" style="margin-top: 500px;">
+        <div class="image">
+            <img src="img/dashboard.svg" alt="planning illustration" width="400" height="250">
+        </div>
+        <div class="intro-container">
+            <h1>
+                Analytics For Better Events
+            </h1>
+            <br>
+            <p>
+                Gain real-time insights into every stage of your event planning process. <br>
+                Make smarter decisions with data-driven dashboards and visual reports.
+            </p>
+            <br><br>
+        </div>
+    </div>
+    <footer class="site-footer" id="Contacts">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="logo" style="margin-right: 100px; margin-top:50px;">
+                <a href="landing.html">HiveFlow
+                    <img src="img/logowhite.png" alt="bee icon" height="20px" weight="20px">
+                </a>
+                <p style="font-size: 15px; color:white; font-weight:200;">&copy; 2025 HiveFlow. All rights reserved.</p>
+
+            </div>
+
+
+            <!-- Contact Info -->
+            <div class="footer-section contact-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@hiveflow.com</p>
+                <p>Phone: +254 700 123 456</p>
+                <p>Location: CUEA, Nairobi</p>
+            </div>
+
+            <!--  Socials -->
+            <div class="footer-section links-section">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="#">Events</a>
+                <a href="#">Support</a>
+                <i class="fa-brands fa-twitter" style="color: white; padding-right:5px;"></i>
+                <i class="fa-brands fa-tiktok" style="color: white; padding-right:5px;"></i>
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

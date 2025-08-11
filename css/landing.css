@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+.logo{
+    font-family: "Sacramento", serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#FF6D1F;
+}
+
+
+.nav-list{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+.nav-list li {
+    margin-right: 20px; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff; 
+    transition: color 0.3s; 
+
+}
+
+.nav-list a:hover {
+    color:#FF6D1F; 
+}
+
+.signup{
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    width: 150px;
+    font-family: 'poppins';
+    font-weight:500;
+    color:white;
+    background-color: #FF6D1F;
+    font-size: small;
+}
+
+.signup:hover{
+    border: 2px solid #FF6D1F;
+    color: #FF6D1F;
+    background-color:white;
+}
+
+.intro{
+    display:flex;
+    position: relative;
+    background-color: #fff;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hamburger{
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  padding-left: 250px;
+}
+@media screen and (max-width: 768px){
+    .intro{
+        display: block;
+    }
+    .image {
+        display: none !important;
+    }
+    .hamburger{
+      display: block;
+    }
+
+  .nav-list{
+    display:none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    padding: 1rem;
+    z-index: 1000;
+    border-radius: 8px;
+    top: 62px;
+    right: 10px;
+    width: 200px;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+}
+
+.intro-container{
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+}
+
+h1{
+    color: #14213D;
+    font-family: "lora";
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+p{
+    font-family: "Poppins";
+}
+
+.sign{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    width: 360px;
+    font-family: 'poppins';
+    font-weight:500;
+    color:#ffffff;
+    background-color: #FF6D1F;
+    font-size: medium;
+}
+
+.sign:hover{
+    border: 2px solid #FF6D1F;
+    color: #FF6D1F;
+    background-color: #ffffff;
+}
+
+.image {
+    display: inline-block;
+}
+
+.image img{
+ margin-left: 100px;
+ display: block;
+ padding-bottom:40px;
+}
+
+.video-section{
+    position: relative;
+    height:500px;
+    overflow: hidden;
+}
+
+.my-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: "lora";
+  padding: 20px;
+
+}
+
+.intro-text p{
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 400;
+}
+.features-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: 'poppins';
+    padding-bottom: 40px;
+  }
+  
+  .features-heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #14213D;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .feature-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .site-footer {
+    background-color:#14213D;
+    padding: 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    flex: 1 1 150px;
+  }
+  
+  .logo-section {
+    font-family: "Sacramento", serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding-left: 30px;
+    width: 150px;
+
+  }
+
+  .logo-section a{
+    text-decoration: none;
+    color:#FF6D1F;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    font-family: 'poppins';
+    font-size: 0.95rem;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .logo-section {
+      margin: 0 auto;
+    }
+  }
+  
+  
