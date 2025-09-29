@@ -1,10 +1,13 @@
 <?php
 
-//Database configuration
-$host = 'localhost';
-$dbname ='hiveflow';
-$username = 'root';
-$password = '';
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
+
+$host = $_ENV['DB_HOST'];
+$dbname = $_ENV['DB_NAME'];
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASS'];
 
 //connection
 try{
